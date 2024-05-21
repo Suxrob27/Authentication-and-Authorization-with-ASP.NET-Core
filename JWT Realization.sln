@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTApp", "..\..\..\Desktop\JWTApp\JWTApp.csproj", "{37EF4E74-0041-44AC-AC62-0A418AEA283E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cookie Realization", "Cookie Realization\Cookie Realization.csproj", "{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{37EF4E74-0041-44AC-AC62-0A418AEA283E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37EF4E74-0041-44AC-AC62-0A418AEA283E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37EF4E74-0041-44AC-AC62-0A418AEA283E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

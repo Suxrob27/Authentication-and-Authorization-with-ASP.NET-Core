@@ -1,0 +1,24 @@
+﻿@page
+@model Cookie_Realization.Pages.Account.LoginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="container mx-auto">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+            <h1 class="mb-3 h3">Register</h1>
+            <form  method="post">
+                <div class="mb-3">
+                    <label asp-for="Credential.Name" class="form-label">Name</label>
+                    <input asp-for="Credential.Name" class="form-label" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Credential.Password" class="form-label">Password</label>
+                    <input asp-for="Credential.Password" class="form-label" />
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn bg-dark text-light">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
