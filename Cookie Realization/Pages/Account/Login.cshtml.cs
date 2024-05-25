@@ -28,12 +28,17 @@ namespace Cookie_Realization.Pages.Account
                     new Claim(ClaimTypes.Email,"admin@mywebsite.com"),
                     new Claim("Department","HR"),
                     new Claim("Admin", "true"),
+                    new Claim("EmploymentDate","2023-05-01")
                    
+                };
+                var authProperties = new AuthenticationProperties
+                {
+                    IsPersistent = Credential.remember_Me 
                 };
                 var identity = new ClaimsIdentity(claims, "MyCookieAuth");
                 ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
 
-                await HttpContext.SignInAsync("MyCookieAuth", claimsPrincipal);
+                await HttpContext.SignInAsync("MyCookieAuth", claimsPrincipal,authProperties);
                 return RedirectToAction("/Index");
 
             }
@@ -49,6 +54,9 @@ namespace Cookie_Realization.Pages.Account
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
+
+            [Display(Name = "Remember ME")]
+            public bool remember_Me { get; set; }   
         }
     }
 }

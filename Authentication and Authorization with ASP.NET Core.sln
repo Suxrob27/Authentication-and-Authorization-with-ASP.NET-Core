@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTApp", "..\..\..\Desktop\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cookie Realization", "Cookie Realization\Cookie Realization.csproj", "{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web API", "Web API\Web API.csproj", "{2304A4F3-EE9D-42BD-89E2-80C938363F04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{015A0B0B-2D78-4945-991D-3F9BA4D5A80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2304A4F3-EE9D-42BD-89E2-80C938363F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2304A4F3-EE9D-42BD-89E2-80C938363F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2304A4F3-EE9D-42BD-89E2-80C938363F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2304A4F3-EE9D-42BD-89E2-80C938363F04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

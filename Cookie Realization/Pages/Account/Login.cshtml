@@ -16,6 +16,10 @@
                     <input asp-for="Credential.Password" class="form-label" />
                 </div>
                 <div class="mb-3">
+                    <label asp-for="Credential.remember_Me" class="form-check-input">Remember Me</label>
+                    <input asp-for="Credential.remember_Me" class="form-check-input" type="checkbox" />
+                </div>
+                <div class="mb-3">
                     <button type="submit" class="btn bg-dark text-light">Log In</button>
                 </div>
             </form>
