@@ -1,6 +1,7 @@
 using Cookie_Realization.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,13 @@ builder.Services.AddAuthorization(opt => {
 });
 
 builder.Services.AddSingleton<IAuthorizationHandler, HrManagerProbationRequiermentHandler>();
+
+builder.Services.AddSession(opt =>
+{
+    opt.Cookie.HttpOnly = true;
+    opt.Cookie.SecurePolicy = CookieSecurePolicy.Always; 
+    opt.IdleTimeout = TimeSpan.FromMinutes(15);  
+});
 
 builder.Services.AddHttpClient("OurWebAPI", client =>
 {
@@ -43,7 +51,11 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();        
 app.UseAuthorization();
-
+app.UseSession();
 app.MapRazorPages();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{action=Index}/{id?}");
 
 app.Run();

@@ -29,6 +29,13 @@ builder.Services.AddAuthentication(opt =>
 
     };
 }).AddJwtBearer("scheme2");
+
+builder.Services.AddAuthorization( opt => 
+{
+    opt.AddPolicy("AdminOnly", policy => 
+    policy.RequireClaim("AdminOnly"));
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

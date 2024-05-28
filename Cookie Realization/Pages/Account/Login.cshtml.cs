@@ -27,7 +27,7 @@ namespace Cookie_Realization.Pages.Account
                     new Claim(ClaimTypes.Name, "admin"),
                     new Claim(ClaimTypes.Email,"admin@mywebsite.com"),
                     new Claim("Department","HR"),
-                    new Claim("Admin", "true"),
+                    new Claim("AdminOnly", "true"),
                     new Claim("EmploymentDate","2023-05-01")
                    
                 };
