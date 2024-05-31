@@ -12,7 +12,7 @@ builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", opt
     opt.ExpireTimeSpan = TimeSpan.FromHours(1); 
     opt.Cookie.Name = "MyCookieAuth";
     opt.LoginPath = "/Account/Login"; 
-    opt.AccessDeniedPath = "/AccessDeniedPath"; 
+    opt.AccessDeniedPath = "Account/AccessDeniedPath"; 
 });
 builder.Services.AddAuthorization(opt => {
     opt.AddPolicy("HrManagerOnly",policy => policy.RequireClaim("Department", "HR"));
